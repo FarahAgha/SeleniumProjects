@@ -18,17 +18,17 @@ public class GoogleSupport {
 	
 	
 
-//	@Test
-//	public void launchURL(){
-//		driver.get("https://support.google.com/");
-//		WebElement targetPageCheck 
-//					= driver.findElement(By.xpath(".//div[normalize-space() = 'How can we help you?']"));
-//		
-//		String expectedResult = "How can we help you?";
-//		String actualResult = targetPageCheck.getText();
-//		boolean istextAvailable =(expectedResult.equals(actualResult));
-//		assertTrue(istextAvailable, "\n(Expected result: "+expectedResult+") on the target page ");	
-//	}
+	@Test
+	public void launchURL(){
+		driver.get("https://support.google.com/");
+		WebElement targetPageCheck 
+					= driver.findElement(By.xpath(".//div[normalize-space() = 'How can we help you?']"));
+		
+		String expectedResult = "How can we help you?";
+		String actualResult = targetPageCheck.getText();
+		boolean istextAvailable =(expectedResult.equals(actualResult));
+		assertTrue(istextAvailable, "\n(Expected result: "+expectedResult+") on the target page ");	
+	}
 	
 	@Test
 	public void SupportSearch(){	
