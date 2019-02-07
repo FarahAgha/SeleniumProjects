@@ -13,7 +13,7 @@ public class GoogleSupport {
 
 	// WebDriver driver = Driver.Firefox();
 
-	// TODO: get dimensions from configuratuion
+	// TODO: get dimensions from config
 
 	@Test
 	public void launchURL() {

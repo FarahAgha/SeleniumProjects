@@ -36,5 +36,6 @@ public class ConfigFileReader {
 		else
 			throw new RuntimeException(
 					"url not specified in the Configuration.properties file.");
+	
 	}
 }
