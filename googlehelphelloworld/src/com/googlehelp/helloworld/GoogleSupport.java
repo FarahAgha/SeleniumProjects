@@ -9,7 +9,7 @@ import org.testng.annotations.*;
 
 public class GoogleSupport {
 
-	WebDriver driver = Driver.Chrome();
+	Driver driver = Driver.Chrome();
 
 	// WebDriver driver = Driver.Firefox();
 
