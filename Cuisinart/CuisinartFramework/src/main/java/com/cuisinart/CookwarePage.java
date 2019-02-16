@@ -21,8 +21,9 @@ public class CookwarePage extends CategoryPage{
 	}
 
 	@Override
-	public String categoryName() {
+	public String categoryName() {	
+		String pgElement = pageElement.getText();
+		return pgElement;
 		
-		return pageElement.getText();
 	}
 }

@@ -6,33 +6,33 @@ import org.junit.Test;
 
 public class cuisinartUnitTest {
 
-	 @Test
-	 public void canGotoHomePage() {
-	 Pages.homePage().goTo();
-	 Assert.assertTrue(Pages.homePage().isAt());
-	 }
-	
+	@Test
+	public void canGotoHomePage() {
+		Pages.homePage().goTo();
+		Assert.assertTrue(Pages.homePage().isAt());
+	}
 
 	@Test
 	public void canGotoCookwarePage() {
-		passCategory("COOKWARE");
+		openCategory("COOKWARE");
 	}
-	
+
 	@Test
 	public void canGotoOutdoorGrillingPage() {
-		passCategory("OUTDOOR GRILLING");
-		
+		openCategory("OUTDOOR GRILLING");
+
 	}
-	
+
 	@Test
 	public void canGotoAppliancesPage() {
-		passCategory("APPLIANCES");
+		openCategory("APPLIANCES");
 	}
 
-
-	private void passCategory(String category) {
+	private void openCategory(String category) {
 		Pages.outdoorGrilling().goTo();
-		CategoryPage categorypage = Pages.outdoorGrilling().getCategoryPage(category);
+		CategoryPage categorypage = Pages.outdoorGrilling().getCategoryPage(
+				category);
+		// System.out.println(category);
 		categorypage.goTo();
 		Assert.assertTrue(categorypage.isAtCategory(category));
 	}

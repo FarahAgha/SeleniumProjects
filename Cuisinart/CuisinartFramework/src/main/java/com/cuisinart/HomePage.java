@@ -10,7 +10,7 @@ public class HomePage {
 	}
 
 	public boolean isAt() {
-
-		return Browser.title().equals(title);
+		boolean result = Browser.title().equals(title);
+		return result;
 	}
 }

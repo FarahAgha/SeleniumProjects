@@ -1,21 +1,17 @@
 package com.cuisinart;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
 
 public class Browser {
 
-//	static WebDriver driver = new FirefoxDriver();
+	// static WebDriver driver = new FirefoxDriver();
 	static WebDriver driver = new ChromeDriver();
-	
-
-	
-	
 
 	public static void goTO(String url) {
-		driver.manage().window().maximize();
+		driver.manage().window().setSize(new Dimension(1600,900));
+		//webDriver.manage().window().setSize(new Dimension(1600,900));
 		driver.get(url);
 
 	}
@@ -29,6 +25,4 @@ public class Browser {
 		driver.close();
 
 	}
-	
-
 }

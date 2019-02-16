@@ -9,20 +9,19 @@ public class Pages {
 		return new HomePage();
 	}
 
-	public static ShopByCategorypage cookwarePage() {
-		ShopByCategorypage cookwarepage = new ShopByCategorypage();
+	public static ShopByCategoryPage cookwarePage() {
+		ShopByCategoryPage cookwarepage = new ShopByCategoryPage();
 		return cookwarepage;
 	}
 
-	public static CategoryPage CookwarePage() {
-		CategoryPage cookwarePage = new CookwarePage();
-		PageFactory.initElements(Browser.driver, cookwarePage);
-		return cookwarePage;
-	}
-	
-	public static ShopByCategorypage outdoorGrilling() {
-		ShopByCategorypage outdoorGrilling = new ShopByCategorypage();
+	public static ShopByCategoryPage outdoorGrilling() {
+		ShopByCategoryPage outdoorGrilling = new ShopByCategoryPage();
 		return outdoorGrilling;
+	}
+
+	public static ShopByCategoryPage appliances() {
+		ShopByCategoryPage appliances = new ShopByCategoryPage();
+		return appliances;
 	}
 
 	public static CategoryPage OutdoorGrilling() {
@@ -30,11 +29,13 @@ public class Pages {
 		PageFactory.initElements(Browser.driver, outdoorGrilling);
 		return outdoorGrilling;
 	}
-	
-	public static ShopByCategorypage appliances() {
-		ShopByCategorypage appliances = new ShopByCategorypage();
-		return appliances;
+
+	public static CategoryPage CookwarePage() {
+		CategoryPage cookwarePage = new CookwarePage();
+		PageFactory.initElements(Browser.driver, cookwarePage);
+		return cookwarePage;
 	}
+
 	public static CategoryPage Appliances() {
 		CategoryPage appliances = new Appliances();
 		PageFactory.initElements(Browser.driver, appliances);
